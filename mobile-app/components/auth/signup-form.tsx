@@ -9,13 +9,8 @@ import {
 } from "react-native";
 import GoogleSignUp from "./google-signup";
 import { useRouter } from "expo-router";
-
-type FormData = {
-  name: string;
-  email: string;
-  phone?: number;
-  password: string;
-};
+import { FormData } from "@/types/form-data";
+import FormSeparator from "../ui/separator";
 
 export default function SignUpForm() {
   const { control, handleSubmit, watch } = useForm<FormData>();
@@ -122,7 +117,7 @@ export default function SignUpForm() {
       <TouchableOpacity
         onPress={handleSubmit(onSubmit)}
         disabled={!isFormValid}
-        className={`w-full rounded-full py-4 flex flex-row justify-center gap-x-2 custom-shadow ${
+        className={`w-full rounded-full h-12 flex flex-row items-center justify-center gap-x-2 custom-shadow ${
           isFormValid ? "bg-primary" : "bg-primary/50"
         }`}
       >
@@ -131,11 +126,7 @@ export default function SignUpForm() {
         </Text>
       </TouchableOpacity>
 
-      <View className="flex-row items-center w-full">
-        <View className="flex-1 h-[0.8px] bg-gray-200" />
-        <Text className="mx-2 text-black-150 text-xs leaidng-[18px] font-normal tracking-tight font-roboto">Or</Text>
-        <View className="flex-1 h-[0.8px] bg-gray-200" />
-      </View>
+      <FormSeparator />
 
       {/* Sign Up with Google */}
       <GoogleSignUp />
