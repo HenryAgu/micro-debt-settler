@@ -10,8 +10,9 @@ const router = useRouter();
   }, []);
 return(
   <ScreenWrapper>
-    <View>
-      re
+    <View className="h-screen flex flex-row items-center justify-center">
+      {/* Placeholder, will be changed later! */}
+      Micro Debt Settler
     </View>
   </ScreenWrapper>
 )
