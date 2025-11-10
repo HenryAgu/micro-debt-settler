@@ -1,8 +1,8 @@
 export interface CreateDebtDTO {
   creditorId?: string; // optional if using non-registered creditor
-  creditorName?: string; // for non-registered creditors
-  creditorEmail?: string; // for non-registered creditors
-  creditorPhone?: string; // for non-registered creditors
+  creditorName?: string; // optional for non-registered creditors
+  creditorEmail?: string; // optional for non-registered creditors
+  creditorPhone?: string; // optional for non-registered creditors
   amount: number;
   currency: string;
   description: string;
@@ -23,9 +23,9 @@ export interface CreateDebtDTO {
 
 export interface CreateReceivableDebtDTO {
   debtorId?: string; // optional if using non-registered debtor
-  debtorName?: string; // for non-registered debtors
-  debtorEmail?: string; // for non-registered debtors
-  debtorPhone?: string; // for non-registered debtors
+  debtorName?: string; // optional for non-registered debtors
+  debtorEmail?: string; // optional for non-registered debtors
+  debtorPhone?: string; // optional for non-registered debtors
   amount: number;
   currency: string;
   description: string;
