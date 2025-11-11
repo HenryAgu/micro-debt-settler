@@ -9,13 +9,8 @@ import {
 } from "react-native";
 import GoogleSignUp from "./google-signup";
 import { useRouter } from "expo-router";
-
-type FormData = {
-  name: string;
-  email: string;
-  phone?: number;
-  password: string;
-};
+import { FormData } from "@/types/form-data";
+import FormSeparator from "../ui/separator";
 
 export default function SignUpForm() {
   const { control, handleSubmit, watch } = useForm<FormData>();
@@ -49,7 +44,7 @@ export default function SignUpForm() {
                 placeholder="Enter your name"
                 value={value}
                 onChangeText={onChange}
-                className="border-[0.8px] border-gray-200 rounded-md px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
+                className="border-[0.8px] border-gray-200 rounded-lg px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
               />
             )}
           />
@@ -68,7 +63,7 @@ export default function SignUpForm() {
                 placeholder="Enter your email"
                 value={value}
                 onChangeText={onChange}
-                className="border-[0.8px] border-gray-200 rounded-md px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
+                className="border-[0.8px] border-gray-200 rounded-lg px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
                 keyboardType="email-address"
                 autoCapitalize="none"
               />
@@ -90,7 +85,7 @@ export default function SignUpForm() {
                 value={value?.toString()}
                 onChangeText={onChange}
                 keyboardType="phone-pad"
-                className="border-[0.8px] border-gray-200 rounded-md px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
+                className="border-[0.8px] border-gray-200 rounded-lg px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
               />
             )}
           />
@@ -112,7 +107,7 @@ export default function SignUpForm() {
                 secureTextEntry
                 autoCapitalize="none"
                 textContentType="password"
-                className="border-[0.8px] border-gray-200 rounded-md px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
+                className="border-[0.8px] border-gray-200 rounded-lg px-[12px] py-2.5 text-sm font-normal font-roboto text-gray-150 h-12 flex items-center"
               />
             )}
           />
@@ -122,7 +117,7 @@ export default function SignUpForm() {
       <TouchableOpacity
         onPress={handleSubmit(onSubmit)}
         disabled={!isFormValid}
-        className={`w-full rounded-full py-4 flex flex-row justify-center gap-x-2 custom-shadow ${
+        className={`w-full rounded-full h-12 flex flex-row items-center justify-center gap-x-2 custom-shadow ${
           isFormValid ? "bg-primary" : "bg-primary/50"
         }`}
       >
@@ -131,11 +126,7 @@ export default function SignUpForm() {
         </Text>
       </TouchableOpacity>
 
-      <View className="flex-row items-center w-full">
-        <View className="flex-1 h-[0.8px] bg-gray-200" />
-        <Text className="mx-2 text-black-150 text-xs leaidng-[18px] font-normal tracking-tight font-roboto">Or</Text>
-        <View className="flex-1 h-[0.8px] bg-gray-200" />
-      </View>
+      <FormSeparator />
 
       {/* Sign Up with Google */}
       <GoogleSignUp />

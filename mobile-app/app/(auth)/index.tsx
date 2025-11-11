@@ -1,51 +1,19 @@
-import { Image } from "expo-image";
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import ScreenWrapper from "@/components/screen-wrapper";
 import { useRouter } from "expo-router";
-import ArrowRightIcon from "@/components/icons/arrow-right";
-
-const blurhash =
-  "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
+import { useEffect } from "react";
+import { View } from "react-native";
 
 export default function HomeScreen() {
-  const router = useRouter();
-  return (
-    <ScreenWrapper>
-      <ScrollView className="px-5 py-12">
-        <View className=" flex flex-col justify-center gap-y-[38px]">
-          <Image
-            source={require("../../assets/images/home.png")}
-            placeholder={{ blurhash }}
-            contentFit="cover"
-            transition={1000}
-            className="w-full h-[452px] object-cover rounded-[20px]"
-          />
-          <View className="flex flex-col gap-y-7 items-center">
-            <View className="flex flex-col gap-y-1 items-center">
-              <Text className="text-black-100 font-semibold text-xl tracking-tight font-roboto-medium">
-                No more awkward IOU's
-              </Text>
-              <Text className="text-base text-gray-100 tracking-tight font-normal text-center mx-5 font-roboto">
-                BuddiePay keeps things even automatically without chase.
-              </Text>
-            </View>
-            <View className="flex flex-col gap-y-3 items-center w-full">
-              <TouchableOpacity
-                onPress={() => router.push("/sign-up")}
-                className="bg-primary w-full rounded-full py-4 flex flex-row items-center justify-center gap-x-2 custom-shadow"
-              >
-                <Text className="text-white text-base font-normal font-roboto">
-                  Get Started
-                </Text>
-                <ArrowRightIcon width={22} height={22} fill="#00BFA6" />
-              </TouchableOpacity>
-              <Text className="text-xs font-normal text-gray-100 tracking-tight font-roboto">
-                Takes less than a few minutes
-              </Text>
-            </View>
-          </View>
-        </View>
-      </ScrollView>
-    </ScreenWrapper>
-  );
+const router = useRouter();
+  useEffect(() => {
+    router.replace("/onboarding");
+  }, []);
+return(
+  <ScreenWrapper>
+    <View className="h-screen flex flex-row items-center justify-center">
+      {/* Placeholder, will be changed later! */}
+      Micro Debt Settler
+    </View>
+  </ScreenWrapper>
+)
 }
