@@ -27,6 +27,7 @@
   "author": "Miracle Jude",
   "license": "MIT",
   "dependencies": {
+    "@getbrevo/brevo": "^3.0.1",
     "@paypal/paypal-server-sdk": "^1.1.0",
     "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
