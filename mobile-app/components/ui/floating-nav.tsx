@@ -38,7 +38,7 @@ export default function FloatingNav() {
   };
 
   return (
-    <View className="absolute bottom-20 left-8 right-8 bg-white p-2 rounded-full shadow-nav flex flex-row items-center justify-between">
+    <View className="absolute bottom-8 left-8 right-8 bg-white p-2 rounded-full shadow-nav flex flex-row items-center justify-between z-50">
       {navItems.map((item, index) => {
         const isActive = pathname === item.link;
         const iconColor = isActive ? "#00BFA6" : "#A1A1A1";
