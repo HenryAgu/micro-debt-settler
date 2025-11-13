@@ -20,7 +20,7 @@ export default function HomeScreen() {
             transition={1000}
             style={{ width: "100%", height: 452, borderRadius: 20 }}
           />
-          <View className="flex flex-col gap-y-7 items-center">
+          <View className="flex flex-col gap-y-7 items-center w-full">
             <View className="flex flex-col gap-y-1 items-center">
               <Text className="text-black-100 font-semibold text-xl tracking-tight font-roboto-medium">
                 No more awkward IOU&apos;s
@@ -33,7 +33,7 @@ export default function HomeScreen() {
             <View className="flex flex-col gap-y-3 items-center w-full">
               <TouchableOpacity
                 onPress={() => router.push("/login")}
-                className="bg-primary w-full rounded-full py-4 flex flex-row items-center justify-center gap-x-2 custom-shadow"
+                className="bg-primary rounded-full custom-shadow flex flex-row gap-x-2 w-full justify-center items-center p-4"
               >
                 <Text className="text-white text-base font-normal font-roboto">
                   Get Started

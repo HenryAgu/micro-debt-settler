@@ -5,27 +5,30 @@
 @import "nativewind/theme";
 
 @theme {
-    --color-primary: #00bfa6;
-    --color-accent: #d2fdf7;
-    --color-success: #1d9c56;
+  --color-primary: #00bfa6;
+  --color-accent: #d2fdf7;
+  --color-success: #1d9c56;
 
-    --color-black-100: #282828;
-    --color-black-150: #1b1b1b;
-    --color-black-180: #121212;
-    --color-black-200: #3d3d3d;
+  --color-black-100: #282828;
+  --color-black-150: #1b1b1b;
+  --color-black-180: #121212;
+  --color-black-200: #3d3d3d;
 
-    --color-green-100: #f2fff7;
+  --color-green-100: #f2fff7;
 
-    --color-gray-100: #5c5c5c;
-    --color-gray-150: #e0e0e0;
-    --color-gray-200: #8b8b8b;
-    --color-gray-250: #8c8c8c;
-    --color-gray-700: #414651;
+  --color-red-100: #fffcfc;
+  --color-red-600: #d13a3a;
 
-    --font-family-roboto: RobotoRegular;
-    --font-family-roboto-medium: RobotoMedium;
-    --font-family-roboto-bold: RobotoBold;
+  --color-gray-100: #5c5c5c;
+  --color-gray-150: #e0e0e0;
+  --color-gray-200: #8b8b8b;
+  --color-gray-250: #8c8c8c;
+  --color-gray-700: #414651;
 
-    --shadow-custom: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    --shadow-nav: 0px 4px 25px rgba(0, 0, 0, 0.17);
+  --font-family-roboto: RobotoRegular;
+  --font-family-roboto-medium: RobotoMedium;
+  --font-family-roboto-bold: RobotoBold;
+
+  --shadow-custom: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-nav: 0px 4px 25px rgba(0, 0, 0, 0.17);
 }

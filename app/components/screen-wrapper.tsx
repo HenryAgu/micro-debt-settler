@@ -10,6 +10,7 @@ export default function ScreenWrapper({
     <ScrollView
       contentContainerStyle={styles.container}
       showsVerticalScrollIndicator={false}
+      className="py-5"
     >
       <View>{children}</View>
     </ScrollView>

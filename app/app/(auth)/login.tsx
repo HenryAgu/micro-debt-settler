@@ -8,7 +8,7 @@ export default function LoginScreen() {
 
   return (
     <ScreenWrapper>
-      <ScrollView className="px-5 py-20">
+      <ScrollView className="px-5 py-12">
         <View className=" flex flex-col justify-center gap-y-6">
           <TouchableOpacity
             onPress={() => router.back()}

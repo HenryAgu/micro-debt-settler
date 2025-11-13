@@ -2,7 +2,7 @@ import Constants from "expo-constants";
 
 const ENV = {
   dev: {
-    apiUrl: "http://localhost:8000/api/v1",
+    apiUrl: "https://micro-debt-settler.onrender.com/api/v1",
   },
   staging: {
     apiUrl: Constants.expoConfig?.extra?.stagingApiUrl,

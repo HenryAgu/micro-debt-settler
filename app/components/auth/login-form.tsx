@@ -1,4 +1,4 @@
-import { FormData } from "@/types/form-data";
+import { FormData } from "@/types/type";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import { Checkbox } from "expo-checkbox";
