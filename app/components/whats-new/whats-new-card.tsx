@@ -79,7 +79,7 @@ export default function WhatsNewCard({ payment }: WhatsNewCardProps) {
         }`}
       >
         <Text
-          className={`font-roboto p-3 w-full text-center flex items-center justify-center ${
+          className={`font-roboto p-3 w-full text-lg text-center flex items-center justify-center ${
             isDebt ? "text-red-600" : "text-primary"
           }`}
         >

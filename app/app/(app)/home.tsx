@@ -6,7 +6,7 @@ import { ScrollView, View } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <View className="flex-1 relative">
+    <View className="flex-1 relative bg-[#F7FFFD]">
       <ScrollView
         className="px-5 py-20"
       >
