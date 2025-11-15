@@ -2,6 +2,7 @@ import { Pressable, Text, TouchableOpacity, View } from "react-native";
 import RBSheet from "react-native-raw-bottom-sheet";
 import AddIcon from "../icons/add";
 import { useRef } from "react";
+import AddIOU from "../home/add-iou";
 
 export default function FloatingAddIOU() {
   const refRBSheet = useRef<any>(null);
@@ -42,9 +43,7 @@ export default function FloatingAddIOU() {
           statusBarTranslucent: true,
         }}
       >
-        <View className="p-6">
-          <Text className="text-lg font-semibold">Your content here</Text>
-        </View>
+        <AddIOU />
       </RBSheet>
     </View>
   );

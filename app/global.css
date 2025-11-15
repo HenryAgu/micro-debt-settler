@@ -13,16 +13,20 @@
   --color-black-150: #1b1b1b;
   --color-black-180: #121212;
   --color-black-200: #3d3d3d;
+  --color-black-250: #4e4e4e;
 
   --color-green-100: #f2fff7;
 
   --color-red-100: #fffcfc;
   --color-red-600: #d13a3a;
 
+  --color-gray-50: #f6f8f7;
+  --color-gray-75: #b0b0b0;
   --color-gray-100: #5c5c5c;
   --color-gray-150: #e0e0e0;
   --color-gray-200: #8b8b8b;
   --color-gray-250: #8c8c8c;
+  --color-gray-300: #3d3d3d;
   --color-gray-700: #414651;
 
   --font-family-roboto: RobotoRegular;
