@@ -1,4 +1,4 @@
-import { Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import RBSheet from "react-native-raw-bottom-sheet";
 import AddIcon from "../icons/add";
 import { useRef } from "react";
@@ -26,7 +26,7 @@ export default function FloatingAddIOU() {
       <RBSheet
         ref={refRBSheet}
         draggable={true}
-        height={600}
+        height={650}
         openDuration={250}
         useNativeDriver={true}
         customStyles={{

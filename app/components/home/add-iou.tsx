@@ -7,12 +7,12 @@ export default function AddIOU() {
   const [activeTab, setActiveTab] = useState<"one" | "two">("one");
   return (
     <View className="py-2.5 px-4">
-      <View className="flex flex-col">
+      <View className="flex flex-col gap-y-1.5">
         <Text className="text-base font-family-roboto font-normal tracking-tight text-gray-300">
           Select
         </Text>
         {/* Tabs */}
-        <View className="flex flex-row items-center gap-x-1.5 w-full py-1.5">
+        <View className="flex flex-row items-center gap-x-1.5 w-full">
           <TouchableOpacity
             className={`basis-[50%] py-2.5 px-4 border-[0.4px] ${
               activeTab === "one" ? "border-red-600" : "border-gray-150"

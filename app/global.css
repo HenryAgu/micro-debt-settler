@@ -10,6 +10,7 @@
   --color-success: #1d9c56;
 
   --color-black-100: #282828;
+  --color-black-120: #353535;
   --color-black-150: #1b1b1b;
   --color-black-180: #121212;
   --color-black-200: #3d3d3d;
@@ -20,8 +21,11 @@
   --color-red-100: #fffcfc;
   --color-red-600: #d13a3a;
 
+  --color-white-150: #f1fffd;
+
   --color-gray-50: #f6f8f7;
   --color-gray-75: #b0b0b0;
+  --color-gray-80: #e1e1e1;
   --color-gray-100: #5c5c5c;
   --color-gray-150: #e0e0e0;
   --color-gray-200: #8b8b8b;
